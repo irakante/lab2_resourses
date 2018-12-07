@@ -21,13 +21,48 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-    <StackLayout  Spacing="0">
-        <!-- Place new controls here -->
+
+    <!--<StackLayout  Spacing="0">
+        -->
+    <!-- Place new controls here -->
+    <!--
         <Button      Style="{StaticResource buttonStyle}"      Text="Button1"/>
         <Button                     Text="Button2"/>
-        <Button                 Text="Button3"/>
+        <Button                 Text="Button3"/>     
+
+    </StackLayout>-->
+    <StackLayout HeightRequest="300"    BackgroundColor="White"  >
+        <StackLayout    WidthRequest="500"
+                        HeightRequest="400"
+                       HorizontalOptions="Center" 
+                        VerticalOptions="Center"
+                        BackgroundColor="Red">
+            
+            
+            <StackLayout   HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           Margin="50 0 0 0"
+                           WidthRequest="100" 
+                           HeightRequest="250"   
+                           BackgroundColor="White">             
+                
+            </StackLayout>
+
+
+            <StackLayout   HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           Margin="-180 0 0 0"
+                           WidthRequest="250" 
+                           HeightRequest="100"   
+                           BackgroundColor="White">
+            </StackLayout>
+        </StackLayout>
+
 
 
     </StackLayout>
 
+    <!--<StackLayout >
+       
+    </StackLayout>-->
 </ContentPage>
