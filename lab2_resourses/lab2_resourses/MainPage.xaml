@@ -5,63 +5,44 @@
              x:Class="lab2_resourses.MainPage">
 
     <ContentPage.Resources>
-        <ResourceDictionary>
-            <Color x:Key="buttonColor">
-                Blue
-            </Color>
-            <Color x:Key="buttonText">
-                Green
-            </Color>
+        <ResourceDictionary>          
             <Color x:Key="whiteBg">
                 White
             </Color>
             <Color x:Key="redBg">
                 Red
-            </Color>
-
-            <Style x:Key="buttonStyle"
-                   TargetType="Button"  >
-                <Setter Property="TextColor" Value="{StaticResource Key=buttonColor}" />
-                <Setter Property="BackgroundColor" Value="{StaticResource Key=buttonText}" />
-            </Style>
-
-          <Style x:Key="redStyle" TargetType="StackLayout" >
+            </Color>   
+            <Style x:Key="redStyle" TargetType="StackLayout" >
                 <Setter Property="BackgroundColor" Value="{StaticResource Key=redBg}" />
-            </Style> 
+            </Style>
             <Style x:Key="whiteStyle"  TargetType="StackLayout" >
                 <Setter Property="BackgroundColor" Value="{StaticResource Key=whiteBg}" />
             </Style>
-
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <!--<StackLayout  Spacing="0">
-        -->
-    <!-- Place new controls here -->
-    <!--
-        <Button      Style="{StaticResource buttonStyle}"      Text="Button1"/>
-        <Button                     Text="Button2"/>
-        <Button                 Text="Button3"/>     
-
-    </StackLayout>-->
-    <StackLayout HeightRequest="300"    Style="{StaticResource whiteStyle}"   >
+    <StackLayout HeightRequest="400" 
+                 WidthRequest ="800"
+                 HorizontalOptions="Center" 
+                 VerticalOptions="Center"  
+                 Style="{StaticResource whiteStyle}"   >
+        
         <StackLayout    WidthRequest="500"
                         HeightRequest="400"
                         HorizontalOptions="Center" 
                         VerticalOptions="Center"
-                         Style="{StaticResource redStyle}">
-            
-            
+                        Style="{StaticResource redStyle}">
+
+            <!--cross | -->
             <StackLayout   HorizontalOptions="Center"
                            VerticalOptions="Center"
                            Margin="50 0 0 0"
                            WidthRequest="100" 
                            HeightRequest="250"   
-                            Style="{StaticResource whiteStyle}">             
-                
+                           Style="{StaticResource whiteStyle}">
             </StackLayout>
 
-
+            <!--cross    -->
             <StackLayout   HorizontalOptions="Center"
                            VerticalOptions="Center"
                            Margin="-180 0 0 0"
@@ -70,12 +51,6 @@
                            Style="{StaticResource whiteStyle}">
             </StackLayout>
         </StackLayout>
-
-
-
     </StackLayout>
 
-    <!--<StackLayout >
-       
-    </StackLayout>-->
 </ContentPage>
