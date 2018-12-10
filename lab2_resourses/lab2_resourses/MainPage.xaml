@@ -15,10 +15,10 @@
             <Style x:Key="BasedCenterOptionsStyle"  TargetType="StackLayout" >    
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="VerticalOptions" Value="Center" />
-            </Style>
+                <Setter Property="BackgroundColor" Value="{StaticResource Key=whiteBg}" />
+             </Style>
 
             <Style x:Key="whiteStyleBg"  TargetType="StackLayout"  BasedOn="{StaticResource Key=BasedCenterOptionsStyle}">
-                <Setter Property="BackgroundColor" Value="{StaticResource Key=whiteBg}" />
                 <Setter Property="HeightRequest" Value="400" />
                 <Setter Property="WidthRequest" Value="800" />   
             </Style>
@@ -28,13 +28,11 @@
                 <Setter Property="WidthRequest" Value="500" />
             </Style>
             <Style x:Key="whiteStyleVertical"  TargetType="StackLayout"  BasedOn="{StaticResource Key=BasedCenterOptionsStyle}">
-                <Setter Property="BackgroundColor" Value="{StaticResource Key=whiteBg}" />
                 <Setter Property="HeightRequest" Value="250" />
                 <Setter Property="WidthRequest" Value="100" />            
                 <Setter Property="Margin" Value="50 0 0 0" />
             </Style>
             <Style x:Key="whiteStyleHorisontal"  TargetType="StackLayout" BasedOn="{StaticResource Key=BasedCenterOptionsStyle}" >
-                <Setter Property="BackgroundColor" Value="{StaticResource Key=whiteBg}" />
                 <Setter Property="HeightRequest" Value="100" />
                 <Setter Property="WidthRequest" Value="250" />          
                 <Setter Property="Margin" Value="-180 0 0 0" />
